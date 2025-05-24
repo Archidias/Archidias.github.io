@@ -4,7 +4,10 @@ nav#navbar {
 
 	padding: 0 25px;
 	
-	background-color: var(--color-blue);
+	background: rgba(26, 46, 77, 0.95);
+
+	backdrop-filter: saturate(180%) blur(10px);
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
 #nav-container {
@@ -45,4 +48,21 @@ nav#navbar {
 }
 .nav-link:hover {
 	color : white;
+}
+
+#nav-brand {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+
+	color: inherit;
+	font-size: 30px;
+	text-decoration: none;
+}
+
+#nav-logo {
+	height: 40px;
+	width: 40px;
+	object-fit: contain;
+	border-radius: 5px;
 }
